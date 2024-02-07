@@ -1,2 +1,227 @@
-.header {
+.header-nav-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 375px;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.header-nav {
+  background-color: #fbfbfb;
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.header-nav-logo {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    padding: 7px 20px;
+  }
+
+  .header-nav-list,
+  .header-nav-social {
+    display: none;
+  }
+
+  .header-burger-open,
+  .header-burger-close {
+    background-color: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .header-burger-open-icon {
+    stroke: #1b414b;
+  }
+
+  .header-burger-close-icon {
+    fill: #055545;
+  }
+
+  .btn-hidden {
+    display: none;
+  }
+
+  .header-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1823;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    padding-top: 259px;
+    padding-bottom: 42px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-burger-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .header-burger-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .header-burger-item {
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-burger-item-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .header-burger-link {
+    width: 91px;
+    padding: 15px 0;
+    background-color: rgba(27, 65, 75, 0.5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-burger-social {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+  }
+
+  .header-burger-social-item {
+    transform: translateY(-30%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-burger-social-active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .header-burger-social-icon {
+    fill: #fbfbfb;
+    transition: fill 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-burger-social-icon:hover {
+    fill: rgba(251, 251, 251, 0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-burger,
+  .header-burger-open,
+  .header-burger-close {
+    display: none;
+  }
+
+  .header-nav-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .header-nav {
+    padding: 4px 28px;
+  }
+
+  .header-nav-logo {
+    font-size: 20px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .header-nav-link {
+    width: 91px;
+    padding: 15px 0;
+    background-color: rgba(27, 65, 75, 0.5);
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-link:hover {
+    background-color: #1b414b;
+  }
+
+  .header-nav-social {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  .header-nav-social-icon {
+    fill: #1b414b;
+    transition: fill 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-social-link:hover .header-nav-social-icon {
+    fill: #062730;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-nav-container {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-nav-container {
+    max-width: 1240px;
+  }
+}
+
+.is-active {
+  background-color: #1b414b;
 }
