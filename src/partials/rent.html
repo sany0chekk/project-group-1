@@ -1,1 +1,31 @@
-<section class="rent"></section>
+<section class="rent">
+    <div class="container rent-wrapper">
+        <h2 class="rent-name">Rent a yacht now</h2>
+        <form class="rent-form">
+            <div class="form-wrapper">
+                <input class="rent-input" type="text" id="name" name="name" placeholder="Full Name">
+                <input class="rent-input" type="mail" id="mail" name="mail" placeholder="Email">
+                <input class="rent-input" type="tel" id="tel" name="tel" placeholder="Phone Number">
+                <textarea class="rent-user-comment" name="rent-comment" id="rent-comment"
+                    placeholder="Comment"></textarea>
+            </div>
+        </form>
+        <button class="rent-btn">Send</button>
+    </div>
+    <div class="rent-img">
+        <picture>
+            <source srcset="/img/rent/rent-des-x1.png 1x, 
+            /img/rent/rent-des-x2.png 2x" media="(min-width=1440px)">
+
+            <source srcset="/img/rent/rent-lapt-x1.png 1x, 
+            /img/rent/rent-lapt-x2.png 2x" media="(min-width=1280px)">
+
+            <source srcset="/img/rent/rent-tab-x1.png 1x, 
+            /img/rent/rent-tab-x2.png 2x" media="(min-width=768px)">
+
+            <source srcset="/img/rent/rent-mob-x1.png 1x, 
+            /img/rent/rent-mob-x2.png 2x" media="(max-width=320px)">
+            <img src="/img/rent/rent-des-x1.png" alt="rent-foto">
+        </picture>
+    </div>
+</section>

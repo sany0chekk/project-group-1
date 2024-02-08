@@ -15,5 +15,8 @@
     <symbol id="icon-youtube" viewBox="0 0 32 32">
       <path d="m18.672 15.722-3.743-1.747c-.327-.152-.595.018-.595.38v3.29c0 .362.268.532.595.38l3.742-1.747c.328-.153.328-.403.002-.557zM16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm0 22.5c-8.19 0-8.333-.738-8.333-6.5S7.81 9.5 16 9.5s8.333.738 8.333 6.5-.143 6.5-8.333 6.5z"/>
     </symbol>
+    <symbol id="icon-vector" viewBox="0 0 4352 32">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h4352"></path>
+    </symbol>
   </defs>
 </svg>
