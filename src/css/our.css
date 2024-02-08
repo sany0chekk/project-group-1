@@ -1,2 +1,96 @@
 .our {
+  padding-top: 80px;
+}
+
+.our-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 40px;
+}
+
+.our-yacht-card {
+  width: 334px;
+  height: 478px;
+  background: #fbfbfb;
+  padding: 16px 16px 32px 16px;
+  border-radius: 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.yacht-img {
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.our-yacht-main {
+  display: flex;
+  gap: 125px;
+  margin: 0px 16px 16px 16px;
+}
+
+.our-yacht-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+
+.our-yacht-category {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.our-icon {
+  fill: #040306;
+  margin-bottom: 16px;
+}
+
+.our-yacht-secondary {
+  display: flex;
+  gap: 114px;
+  margin: 0px 16px;
+}
+
+.our-secondary-questions {
+}
+.our-questions-list {
+}
+.our-questions-list-item {
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.our-questions-list-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.our-secondary-answers {
+}
+.our-answers-list {
+}
+.our-answers-list-item {
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+
+.our-answers-list-item:not(:last-child) {
+  margin-bottom: 6px;
 }
