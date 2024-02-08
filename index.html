@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-1/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-1/assets/index-923cd95a.css">
+    <link rel="stylesheet" href="/project-group-1/assets/index-90ca3419.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +41,7 @@
             class="header-nav-social-link"
           >
             <svg class="header-nav-social-icon" width="19" height="19">
-              <use href="/project-group-1/assets/icons-16a63549.svg#icon-instagram"></use>
+              <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -51,7 +51,7 @@
             class="header-nav-social-link"
           >
             <svg class="header-nav-social-icon" width="20" height="20">
-              <use href="/project-group-1/assets/icons-16a63549.svg#icon-youtube"></use>
+              <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -61,14 +61,14 @@
             class="header-nav-social-link"
           >
             <svg class="header-nav-social-icon" width="20" height="20">
-              <use href="/project-group-1/assets/icons-16a63549.svg#icon-facebook"></use>
+              <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
       <button type="button" class="header-burger-open" data-burger-open>
         <svg class="header-burger-open-icon" width="28" height="28">
-          <use href="/project-group-1/assets/icons-16a63549.svg#icon-burger"></use>
+          <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-burger"></use>
         </svg>
       </button>
       <button
@@ -77,7 +77,7 @@
         data-burger-close
       >
         <svg class="header-burger-close-icon" width="16" height="16">
-          <use href="/project-group-1/assets/icons-16a63549.svg#icon-close"></use>
+          <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-close"></use>
         </svg>
       </button>
     </nav>
@@ -101,7 +101,7 @@
           class="header-burger-social-link"
         >
           <svg class="header-burger-social-icon" width="19" height="19">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-instagram"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -111,7 +111,7 @@
           class="header-burger-social-link"
         >
           <svg class="header-burger-social-icon" width="20" height="20">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-youtube"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -121,7 +121,7 @@
           class="header-burger-social-link"
         >
           <svg class="header-burger-social-icon" width="20" height="20">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-facebook"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -132,7 +132,7 @@
 
     <main>
       <section class="hero">
-  <div class="container hero-container">
+  <div class="container">
     <h1 class="hero-title">
       Explore the High Seas with Our Luxury Yacht Rentals
     </h1>
@@ -141,9 +141,95 @@
       from our top-of-the-line yachts and embark on an unforgettable journey
       surrounded by breathtaking views and state-of-the-art amenities.
     </p>
-    <button type="button" class="hero-btn">Yacht rental</button>
+    <button type="button" class="hero-btn" data-modal-open>Yacht rental</button>
   </div>
 </section>
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-svg" width="8" height="8">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Let your DREAMS come true!</p>
+    <form class="modal-form">
+      <div class="modal-field">
+        <label for="user-name" class="modal-label">Name</label>
+        <div class="modal-input-wrap">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            id="user-name"
+            required
+          />
+          <svg class="modal-icon" width="18" height="24">
+            <use href="../img/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label" for="user-phone">Phone</label>
+        <div class="modal-input-wrap">
+          <input
+            type="tel"
+            name="user-tel"
+            required
+            class="modal-input"
+            id="user-phone"
+          />
+          <svg class="modal-icon" width="18" height="24">
+            <use href="../img/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-email" class="modal-label">Email</label>
+        <div class="modal-input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            id="user-email"
+            required
+          />
+          <svg class="modal-icon" width="18" height="24">
+            <use href="../img/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-checkbox-field-container">
+        <label for="user-comment" class="modal-label">Comment</label>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="modal-text"
+          placeholder="Leave your message here..."
+        ></textarea>
+      </div>
+      <div class="modal-check-box">
+        <input
+          type="checkbox"
+          id="user-privacy"
+          name="user-privacy"
+          class="visually-hidden-modal"
+          value="true"
+        />
+        <label for="user-privacy" class="modal-check-text"
+          ><span class="user-privacy-span">
+            <svg width="10" height="8" class="modal-check-icon">
+              <use href="../img/icons.svg#icon-close"></use></svg></span
+          >I accept the terms and conditions of the<a
+            class="policy-page"
+            href=""
+            >Privacy Policy</a
+          ></label
+        >
+      </div>
+      <button class="modal-hero-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
 
       <section class="about">
     <div class="container">
@@ -355,21 +441,21 @@
       <li class="footer-icon-item">
         <a href="https://www.instagram.com/goitclub/" class="footer-icon-link">
           <svg class="footer-icon-svg" width="20" height="20">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-instagram"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
       <li class="footer-icon-item">
         <a href="https://www.youtube.com/c/GoIT" class="footer-icon-link">
           <svg class="footer-icon-svg" width="20" height="20">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-youtube"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
       <li class="footer-icon-item">
         <a href="https://www.facebook.com/goITclub/" class="footer-icon-link">
           <svg class="footer-icon-svg" width="20" height="20">
-            <use href="/project-group-1/assets/icons-16a63549.svg#icon-facebook"></use>
+            <use href="/project-group-1/assets/icons-8b865cd2.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -391,5 +477,6 @@
 
 
     
+    <script defer src="./modal.js"></script>
   </body>
 </html>
