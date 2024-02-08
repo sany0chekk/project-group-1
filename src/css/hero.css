@@ -1,2 +1,151 @@
+/** ============================== MOBILE 👇 ========================== */
 .hero {
+    text-align: center;
+    display: flex;
+    background-image: url(/img/hero/hero-bg-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 812px;
+    margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: url(/img/hero/hero-bg-mobile-2x.jpg);
+    }
+}
+
+.hero-container {
+    margin-top: 260px;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin-bottom: 24px;
+    
+}
+
+.hero-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.16667;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.7);
+    margin-bottom: 38px;
+}
+
+.hero-btn {
+    color: #fbfbfb;
+    cursor: pointer;
+    background-color: #1b414b;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    width: 141px;
+    height: 46px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #fbfbfb;
+    color: #1b414b;
+}
+
+
+/** ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) {
+
+.hero {
+    background-image: url(/img/hero/hero-bg-tablet-1x.jpg);
+    height: 962px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: url(/img/hero/hero-bg-tablet-2x.jpg);
+    }
+}
+
+.hero-container {
+    margin-top: 280px;
+}
+
+.hero-title {
+    font-size: 70px;
+}
+
+.hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(251, 251, 251, 0.7);
+    max-width: 597px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.hero-btn {
+    width: 179px;
+    height: 52px;
+    padding: 16px 40px;
+    width: 179px;
+    height: 52px;
+}
+}
+/** ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1280px) {
+
+.hero {
+    background-image: url(/img/hero/hero-bg-desktop-1x.jpg);
+    height: 800px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-image: url(/img/hero/hero-bg-desktop-2x.jpg);
+        }
+}
+
+.hero-container {
+    margin-top: 235px;
+}
+.hero-title {
+    max-width: 1001px;
+    font-size: 80px;
+}
+}
+/** ============================================== DESKTOP-MAX 👇 ========================================= */
+@media screen and (min-width: 1440px) {
+
+.hero {
+    background-image: url(/img/hero/hero-bg-desktop-max-1x.jpg);
+    max-width: 1440px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-image: url(/img/hero/hero-bg-desktop-max-2x.jpg);
+        }
+    }
 }
