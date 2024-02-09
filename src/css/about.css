@@ -72,7 +72,6 @@
     .about-container-text {
         display: flex;
         gap: 189px;
-        padding-bottom: 100px;
     }
     .about-title {
         max-width: 537px;
@@ -82,7 +81,7 @@
     }
     .about-text {
         max-width: 354px;
-        padding-bottom: 0;
+        padding-bottom: 100px;
     }
     .about-img {
         width: 1180px;
