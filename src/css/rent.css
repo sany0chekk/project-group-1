@@ -1,6 +1,7 @@
 .rent {
-  padding-top: 80px;
+
 }
+
 
 .rent-name {
   color: #fbfbfb;
@@ -25,6 +26,13 @@
   height: 42px;
   margin-bottom: 18px;
   padding-left: 18px;
+  background-color: transparent;
+}
+
+.rent-input:hover::placeholder,
+.rent-input:focus::placeholder {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  font-size: 14px;
 }
 
 .rent-user-comment {
@@ -38,6 +46,13 @@
   height: 108px;
   padding-top: 14px;
   padding-left: 18px;
+  background-color: transparent;
+}
+
+.rent-user-comment:hover::placeholder,
+.rent-user-comment:focus::placeholder {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  font-size: 14px;
 }
 
 .rent-btn {
@@ -53,7 +68,9 @@
   border: none;
   margin-bottom: 80px;
 }
-.rent-img {
-    display: flex;
-    margin: 0 auto;
+
+.rent-btn:hover,
+.rent-btn:focus {
+  background: #fbfbfb;
+  color: #1b414b;
 }
