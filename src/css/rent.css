@@ -26,13 +26,6 @@
   height: 42px;
   margin-bottom: 18px;
   padding-left: 18px;
-  background-color: transparent;
-}
-
-.rent-input:hover::placeholder,
-.rent-input:focus::placeholder {
-  border: 1px solid rgba(251, 251, 251, 0.5);
-  font-size: 14px;
 }
 
 .rent-user-comment {
@@ -47,13 +40,6 @@
   height: 108px;
   padding-top: 14px;
   padding-left: 18px;
-  background-color: transparent;
-}
-
-.rent-user-comment:hover::placeholder,
-.rent-user-comment:focus::placeholder {
-  border: 1px solid rgba(251, 251, 251, 0.5);
-  font-size: 14px;
 }
 
 .rent-btn {
