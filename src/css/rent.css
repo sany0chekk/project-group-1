@@ -15,6 +15,7 @@
 }
 
 .rent-input {
+  font-family: 'Inter', sans-serif;
   color: rgba(251, 251, 251, 0.4);
   font-weight: 400;
   font-size: 12px;
@@ -28,6 +29,7 @@
 }
 
 .rent-user-comment {
+  font-family: 'Inter', sans-serif;
   color: rgba(251, 251, 251, 0.4);
   font-weight: 400;
   font-size: 12px;
@@ -41,6 +43,7 @@
 }
 
 .rent-btn {
+  font-family: 'Inter', sans-serif;
   color: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
@@ -53,7 +56,62 @@
   border: none;
   margin-bottom: 80px;
 }
-.rent-img {
+
+.rent-btn:hover,
+.rent-btn:focus {
+  background: #fbfbfb;
+  color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .input-wrapper {
+    padding: 0 148px;
+   }
+
+    .form-wrapper {
+      margin: 50px 0;
+    }
+  
+.rent-btn {
+margin-bottom: 100px;
+}
+
+.rent-name {
+  font-size: 48px;
+}
+
+.rent-input {
+  font-size: 14px;
+  line-height: 1.3; 
+  height: 54px;
+}
+
+.rent-user-comment {
+    font-size: 14px;
+      line-height: 1.3;
+      height: 116px;
+}
+
+.rent-btn {
+  font-size: 18px;
+  line-height: 1.1;
+  width: 194px;
+  height: 56px;
+  border: none;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .rent {
+    padding-top: 150px;
+  }
+  .rent-wrapper {
     display: flex;
-    margin: 0 auto;
+    flex-direction: row-reverse;
+
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
 }
