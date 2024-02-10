@@ -23,8 +23,7 @@
 }
 
 .our-card-list-item {
-  width: 334px;
-  height: 478px;
+  max-width: 375px;
   background: #fbfbfb;
   padding: 16px 16px 32px 16px;
   border-radius: 24px;
@@ -62,11 +61,6 @@
   color: #040306;
   opacity: 0.4;
 }
-
-/* .our-icon {
-  fill: #040306;
-  margin-bottom: 16px;
-} */
 
 .our-yacht-secondary {
   display: flex;
@@ -107,35 +101,39 @@
 }
 
 .second {
-  display: none;
+  display: block;
 }
 
 .third {
   display: none;
 }
 
-/* .our-link { */
-/* display: inline-block;
+.our-btn {
+  display: flex;
   justify-content: center;
-  border: 1px solid rgba(251, 251, 251, 0.35);
-  border-radius: 15px;
-  /* padding: 14px 32px; */
-/* width: 141px;
-  height: 46px;
-  }  */
+  align-items: center;
 
-/* .our-link-text {
+  margin: 0 auto;
+  width: 141px;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-} */
+  background-color: transparent;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  padding: 14px 0;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*!----------TABLET----------!*/
 
 @media screen and (min-width: 768px) {
-  .our-title {
+  .our {
     padding-top: 150px;
+  }
+
+  .our-title {
     font-size: 48px;
     width: 656px;
     margin-left: auto;
@@ -174,6 +172,11 @@
   .our-yacht-category {
     font-size: 13px;
     line-height: 1.18;
+  }
+
+  .our-btn {
+    padding: 16px 0;
+    width: 179px;
   }
 }
 
