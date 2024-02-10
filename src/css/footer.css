@@ -14,7 +14,9 @@
 
 .footer-logo-id {
   display: flex;
+  flex-direction: column;
   margin-bottom: 80px;
+  gap: 10px;
 }
 .footer-logo {
   margin: 0 auto;
@@ -25,7 +27,8 @@
 }
 .footer-id-list {
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  /* flex-direction: column; */
   gap: 4px;
 }
 .footer-id-item {
@@ -96,6 +99,10 @@
   color: rgba(251, 251, 251, 0.4);
 }
 @media screen and (min-width: 360px) {
+  .footer-logo-id {
+    flex-direction: row;
+    gap: 0;
+  }
   .footer-logo {
     margin-right: auto;
   }
