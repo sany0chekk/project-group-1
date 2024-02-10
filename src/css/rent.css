@@ -26,6 +26,13 @@
   height: 42px;
   margin-bottom: 18px;
   padding-left: 18px;
+  background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rent-input:hover,
+.rent-input:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
 }
 
 .rent-user-comment {
@@ -40,6 +47,13 @@
   height: 108px;
   padding-top: 14px;
   padding-left: 18px;
+  background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rent-user-comment:hover,
+.rent-user-comment:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
 }
 
 .rent-btn {
@@ -55,50 +69,101 @@
   height: 46px;
   border: none;
   margin-bottom: 80px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rent-btn:hover,
 .rent-btn:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
+}
+
+.backdrop {
+display: flex;
+  position: fixed;
+  top: 25%;
+  left: 18px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100%;
+  gap: 8px;
+}
+
+.rent-close-modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(251, 251, 251, 0.2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rent-close-modal-btn:hover,
+.rent-close-modal-btn:focus {
+  background-color: #4D5AE5;
+}
+
+.rent-modal-text {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  letter-spacing: -0.02em;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 768px) {
   .input-wrapper {
     padding: 0 148px;
-   }
+  }
 
-    .form-wrapper {
-      margin: 50px 0;
-    }
-  
-.rent-btn {
-margin-bottom: 100px;
-}
+  .form-wrapper {
+    margin: 50px 0;
+  }
 
-.rent-name {
-  font-size: 48px;
-}
+  .rent-btn {
+    margin-bottom: 100px;
+  }
 
-.rent-input {
-  font-size: 14px;
-  line-height: 1.3; 
-  height: 54px;
-}
+  .rent-name {
+    font-size: 48px;
+  }
 
-.rent-user-comment {
+  .rent-input {
     font-size: 14px;
-      line-height: 1.3;
-      height: 116px;
-}
+    line-height: 1.3;
+    height: 54px;
+  }
 
-.rent-btn {
-  font-size: 18px;
-  line-height: 1.1;
-  width: 194px;
-  height: 56px;
-  border: none;
-}
+  .rent-user-comment {
+    font-size: 14px;
+    line-height: 1.3;
+    height: 116px;
+  }
+
+  .rent-btn {
+    font-size: 18px;
+    line-height: 1.1;
+    width: 194px;
+    height: 56px;
+    border: none;
+  }
+
+    .backdrop{
+      top: 30%;
+      left: 35%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -108,10 +173,24 @@ margin-bottom: 100px;
   .rent-wrapper {
     display: flex;
     flex-direction: row-reverse;
-
+    gap: 50px;
   }
 
+  .input-wrapper {
+    padding: 0;
+  }
+  .rent-btn {
+    margin: 0;
+  }
+
+     .backdrop {
+       top: 27%;
+       left: 50%;
+     }
 }
 
 @media screen and (min-width: 1440px) {
+  .rent-wrapper {
+    padding-right: 100px;
+  }
 }
