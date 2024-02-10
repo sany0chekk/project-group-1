@@ -23,11 +23,13 @@
   color: #fbfbfb;
 }
 .footer-id-list {
+  margin-left: auto;
   display: flex;
   gap: 4px;
-  margin-left: auto;
 }
 .footer-id-item {
+}
+.footer-id-link {
   font-weight: 400;
   font-size: 9px;
   line-height: 1.3;
@@ -42,9 +44,9 @@
   justify-content: center;
   align-items: center;
 }
-.footer-id-item:hover,
-.footer-id-item:active,
-.footer-id-item:focus {
+.footer-id-link:hover,
+.footer-id-link:active,
+.footer-id-link:focus {
   background: #fbfbfb;
   color: #1b414b;
 }
@@ -119,7 +121,7 @@
   .footer-id-list {
     margin: 0 auto;
   }
-  .footer-id-item {
+  .footer-id-link {
     width: 91px;
   }
   .footer-icon-list {
