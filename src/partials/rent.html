@@ -33,12 +33,28 @@
             </picture>
         </div>
     </div>
+    <div class="rent-img">
+        <picture>
+            <source srcset="/img/rent/rent-des-x1.png 1x, 
+            /img/rent/rent-des-x2.png 2x" media="(min-width:1440px)">
+
+            <source srcset="/img/rent/rent-lapt-x1.png 1x, 
+            /img/rent/rent-lapt-x2.png 2x" media="(min-width:1280px)">
+
+            <source srcset="/img/rent/rent-tab-x1.png 1x, 
+            /img/rent/rent-tab-x2.png 2x" media="(min-width:768px)">
+
+            <source srcset="/img/rent/rent-mob-x1.png 1x, 
+            /img/rent/rent-mob-x2.png 2x" media="(max-width:320px)">
+            <img src="/img/rent/rent-des-x1.png" alt="rent-foto">
+        </picture>
+    </div>
 </section>
 <div class="backdrop is-open">
     <p class="rent-modal-text">Your data is sent for processing</p>
     <button class="rent-close-modal-btn">
         <svg class="rent-close-modal-icon" width="8" height="8">
-            <use href="/img/icons.svg#icon-close"></use>
+            <use href="../img/icons.svg#icon-close"></use>
         </svg>
     </button>
 </div>
