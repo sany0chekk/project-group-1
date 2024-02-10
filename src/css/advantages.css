@@ -1,2 +1,139 @@
+/*-------add to global--------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*---------section advantages---------*/
+
+.advantages-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
 .advantages {
+  max-width: 295px;
+  background-color: #1b414b;
+  border-radius: 24px;
+  padding: 80px 20px;
+  margin-bottom: 20px;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  counter-reset: item;
+  list-style-type: none;
+  display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.advantages-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  display: block;
+  width: 295px;
+}
+
+.advantages-item:before {
+  content: counter(item, decimal-leading-zero) ' ';
+  counter-increment: item;
+}
+
+.under {
+  position: relative;
+}
+
+.under::after {
+  position: absolute;
+  content: '';
+  top: 48px;
+  border-radius: 18px;
+  background-color: rgba(251, 251, 251, 0.1);
+  height: 2px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.advantages-list-text {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-top: 38px;
+  opacity: 0.8;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .advantages {
+    max-width: 704px;
+    padding: 90px 32px;
+  }
+.advantages-item {
+    max-width: 295px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 44px 32px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+.advantages-container {
+    display: flex;
+    gap: 32px;
+}
+
+.advantages-item:focus,
+.advantages-item:hover 
+{
+    background-color: rgba(251, 251, 251, 0.3);
+    border-radius: 24px;
+    padding: 15px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1340px;
+  }
 }
