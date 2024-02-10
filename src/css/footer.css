@@ -47,6 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-id-link:hover,
 .footer-id-link:active,
@@ -69,6 +70,7 @@
 }
 .footer-icon-svg {
   fill: #fbfbfb;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-svg:hover,
 .footer-icon-svg:active,
