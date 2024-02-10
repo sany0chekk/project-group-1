@@ -17,14 +17,15 @@
   margin-bottom: 80px;
 }
 .footer-logo {
+  margin: 0 auto;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.03em;
   color: #fbfbfb;
 }
 .footer-id-list {
-  margin-left: auto;
   display: flex;
+  flex-direction: column;
   gap: 4px;
 }
 .footer-id-item {
@@ -94,7 +95,15 @@
   text-align: center;
   color: rgba(251, 251, 251, 0.4);
 }
-
+@media screen and (min-width: 360px) {
+  .footer-logo {
+    margin-right: auto;
+  }
+  .footer-id-list {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 150px;
