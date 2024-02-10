@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-1/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-1/assets/index-f865e926.css">
+    <link rel="stylesheet" href="/project-group-1/assets/index-31a9a6e3.css">
   </head>
   <body>
     <header class="header">
@@ -267,7 +267,7 @@
         
 </section>
 
-      <section class="our">
+      <section id="our" class="our">
   <div class="container">
     <h2 class="our-title">
       Choose your dream yacht and sail away into the sunset
@@ -278,8 +278,6 @@
           srcset="/project-group-1/assets/arrow_yacht-b43783e8.jpg 1x, /project-group-1/assets/arrow_yacht_2x-afed8a4e.jpeg 2x"
           src="/project-group-1/assets/arrow_yacht-b43783e8.jpg"
           alt="arrow_yacht"
-          width="302"
-          height="240"
           class="yacht-img"
         />
         <div class="our-yacht-main">
@@ -314,8 +312,6 @@
           srcset="/project-group-1/assets/benetti_yacht-192ec13a.jpg 1x, /project-group-1/assets/benetti_yacht_2x-b25f3166.jpg 2x"
           src="/project-group-1/assets/benetti_yacht-192ec13a.jpg"
           alt="arrow_yacht"
-          width="302"
-          height="240"
           class="yacht-img"
         />
         <div class="our-yacht-main">
@@ -346,12 +342,24 @@
       </li>
 
       <li class="our-card-list-item third">
+        <!-- <picture>
+          <source srcset="/img/rent/rent-des-x1.png 1x, 
+      /img/rent/rent-des-x2.png 2x" media="(min-width:1440px)">
+
+          <source srcset="/img/rent/rent-lapt-x1.png 1x, 
+      /img/rent/rent-lapt-x2.png 2x" media="(min-width:1280px)">
+
+          <source srcset="/img/rent/rent-tab-x1.png 1x, 
+      /img/rent/rent-tab-x2.png 2x" media="(min-width:768px)">
+
+          <source srcset="/img/rent/rent-mob-x1.png 1x, 
+      /img/rent/rent-mob-x2.png 2x" media="(max-width:320px)">
+          <img src="/img/rent/rent-des-x1.png" alt="rent-foto">
+      </picture> -->
         <img
           srcset="/project-group-1/assets/belleanna_yacht-2e9d1fa9.jpg 1x, /project-group-1/assets/belleanna_yacht_2x-c073fb8f.jpg 2x"
           src="/project-group-1/assets/belleanna_yacht-2e9d1fa9.jpg"
           alt="arrow_yacht"
-          width="302"
-          height="240"
           class="yacht-img"
         />
         <div class="our-yacht-main">
@@ -381,9 +389,8 @@
         </div>
       </li>
     </ul>
-    <!-- <a href="" class="our-link">
-      <p class="our-link-text">Yacht rental</p>
-    </a> -->
+
+    <a href="#rent" class="our-btn">Yacht rental</a>
   </div>
 </section>
 
