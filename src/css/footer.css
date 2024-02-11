@@ -1,6 +1,12 @@
 .footer {
   padding-top: 80px;
 }
+
+.footer.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
 .container-footer {
   margin: 0 auto;
   max-width: 375px;
@@ -174,4 +180,9 @@
   .container-footer {
     max-width: 1440px;
   }
+}
+
+.fade-in.fade-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }

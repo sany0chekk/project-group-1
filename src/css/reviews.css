@@ -2,6 +2,21 @@
   padding-top: 80px;
 }
 
+.reviews-title.fade-in {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.reviews-text.fade-in {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.reviews-list.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 .reviews-title {
   font-weight: 500;
   font-size: 28px;

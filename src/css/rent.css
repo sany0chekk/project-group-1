@@ -1,6 +1,15 @@
 .rent {
   padding-top: 80px;
 }
+.rent-content-wrapper.fade-in {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.rent-img.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
 
 .rent-name {
   color: #fbfbfb;
