@@ -4,7 +4,7 @@
 
 .footer.fade-in {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(30px);
 }
 
 .container-footer {
@@ -123,6 +123,12 @@
   .footer {
     padding-top: 150px;
   }
+
+  .footer.fade-in {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
   .container-footer {
     max-width: 768px;
     padding: 0 16px;
