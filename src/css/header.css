@@ -6,17 +6,18 @@
   max-width: 375px;
   width: 100%;
   padding: 0 20px;
-  z-index: 100;
+  z-index: 150;
 }
 
 .header-nav {
   background-color: #fbfbfb;
   border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 10px #33333396;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 150;
 }
 
 .header-nav-logo {
@@ -24,6 +25,32 @@
   font-size: 14px;
   letter-spacing: -0.03em;
   color: #1b414b;
+}
+
+.scroll-to-top-btn {
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1b414b;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
+.scroll-to-top-btn svg {
+  fill: #fff;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top-btn:hover svg {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 767px) {
