@@ -1,6 +1,7 @@
 .about {
     padding-top: 40px;
     max-width: 375px;
+    width: 100%;
     margin: 0 auto;
     background-color: #fbfbfb;
     border-radius: 24px;
@@ -34,13 +35,13 @@
     display: block;
     max-width: 100%;
     border-radius: 24px;
-    width: 335px;
-    height: 395px;
+    width: 100%;
+    
 }
 /**--------------JACHTJET-TABLET--------------*/
 @media screen and (min-width: 768px) {
     .about {
-        width: 704px;
+        max-width: 704px;
         padding-top: 50px;
     }
     .about-title {
@@ -60,13 +61,13 @@
     }
     .about-img {
         width: 704px;
-        height: 470px;
+        width: 100%;
     }
 }
 /**-----------JACHTJET-DESKTOP-1280------*/
 @media screen and (min-width: 1280px) {
     .about {
-        width: 1180px;
+        max-width: 1180px;
     }
     .about-container-text {
         display: flex;
@@ -84,13 +85,13 @@
     }
     .about-img {
         width: 1180px;
-        height: 470px;
+        width: 100%;
     }
 }
 /**-------------JACHTJET-DESKTOP-1440------*/
 @media screen and (min-width: 1440px) {
     .about {
-        width: 1340px;
+        max-width: 1340px;
     }
     .about-container-text {
         gap: 299px;
@@ -103,6 +104,6 @@
     }
     .about-img {
         width: 1340px;
-        height: 470px;
+        width: 100%;
     }
 }
