@@ -1,7 +1,6 @@
 .about {
     padding-top: 40px;
-    width: 335px;
-    height: 675px;
+    max-width: 375px;
     margin: 0 auto;
     background-color: #fbfbfb;
     border-radius: 24px;
