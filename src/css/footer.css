@@ -124,11 +124,6 @@
     padding-top: 150px;
   }
 
-  .footer.fade-in {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
   .container-footer {
     max-width: 768px;
     padding: 0 16px;
@@ -170,6 +165,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .footer.fade-in {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
   .container-footer {
     max-width: 1280px;
     padding: 0 25px;

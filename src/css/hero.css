@@ -358,16 +358,6 @@
     }
   }
 
-  .hero-title.fade-in {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  .hero-text.fade-in {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
   .hero-title {
     font-size: 70px;
   }
@@ -432,6 +422,16 @@
         ),
         url(/img/hero/hero-bg-desktop-2x.jpg);
     }
+  }
+
+  .hero-title.fade-in {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  .hero-text.fade-in {
+    opacity: 0;
+    transform: translateX(50px);
   }
 
   .hero-title {
