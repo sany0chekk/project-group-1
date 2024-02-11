@@ -82,9 +82,6 @@
 }
 /**-------------JACHTJET-DESKTOP-1440------*/
 @media screen and (min-width: 1440px) {
-  .about-container-text {
-    gap: 299px;
-  }
   .about-subtitle {
     max-width: 404px;
   }

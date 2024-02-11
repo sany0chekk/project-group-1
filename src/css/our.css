@@ -218,6 +218,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .our-card-list {
+    display: flex;
+    justify-content: center;
+  }
   .our-card-list-item {
     width: calc((100% - 64px) / 3);
   }
