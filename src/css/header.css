@@ -9,6 +9,16 @@
   z-index: 150;
 }
 
+.header-nav-container.fade-in {
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.header-nav-container.fade-in.fade-show {
+  opacity: 1;
+  transform: translate(-50%, 0px);
+}
+
 .header-nav {
   background-color: #fbfbfb;
   border: 1px solid #fbfbfb;
