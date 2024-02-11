@@ -6,6 +6,10 @@
   margin-bottom: 40px;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
 .our-title {
   font-weight: 500;
   font-size: 28px;
@@ -103,14 +107,6 @@
 
 .our-answers-list-item:not(:last-child) {
   margin-bottom: 6px;
-}
-
-.second {
-  display: none;
-}
-
-.third {
-  display: none;
 }
 
 .our-btn {
