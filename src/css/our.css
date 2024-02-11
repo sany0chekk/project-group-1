@@ -101,7 +101,7 @@
 }
 
 .second {
-  display: block;
+  display: none;
 }
 
 .third {
@@ -153,7 +153,6 @@
 
   .our-card-list-item {
     width: calc((100% - 32px) / 2);
-    height: 508px;
   }
 
   .yacht-img {
@@ -210,6 +209,7 @@
 @media screen and (min-width: 1440px) {
   .our-card-list {
     gap: 32px;
+    justify-content: center;
   }
 
   .our-card-list-item {
