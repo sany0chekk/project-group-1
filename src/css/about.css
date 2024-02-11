@@ -63,16 +63,6 @@
     transform: translateY(-68px);
   }
 
-  .about-title.fade-in {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-
-  .about-descr.fade-in {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-
   .about-content {
     padding: 50px 32px;
   }
@@ -96,6 +86,16 @@
 @media screen and (min-width: 1280px) {
   .about {
     transform: translateY(-30px);
+  }
+
+  .about-title.fade-in {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .about-descr.fade-in {
+    opacity: 0;
+    transform: translateX(20px);
   }
 
   .about-content {
