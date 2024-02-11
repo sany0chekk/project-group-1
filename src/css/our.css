@@ -123,7 +123,13 @@
   border: 1px solid rgba(251, 251, 251, 0.35);
   border-radius: 15px;
   padding: 14px 0;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-btn:hover,
+.our-btn:focus {
+  color: #1b414b;
+  background: #fbfbfb;
 }
 
 /*!----------TABLET----------!*/
