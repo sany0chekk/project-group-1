@@ -10,7 +10,7 @@
   letter-spacing: -0.02em;
 }
 
-.form-wrapper {
+.rent-form {
   margin: 40px 0;
 }
 
@@ -79,56 +79,77 @@
   color: #1b414b;
 }
 
-.backdrop {
-display: flex;
+.rent-backdrop {
   position: fixed;
-  top: 25%;
-  left: 18px;
-  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000081;
+  z-index: 300;
   visibility: hidden;
   pointer-events: none;
-  width: 100%;
-  gap: 8px;
+  opacity: 0;
+  transition: visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.rent-close-modal-btn {
+.rent-is-active {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.rent-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 20px 50px 20px;
+  border-radius: 20px;
+}
+
+.rent-modal-btn {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  margin-left: auto;
+  margin-bottom: 20px;
   border: none;
-  background-color: rgba(251, 251, 251, 0.2);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1b414b;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.rent-close-modal-btn:hover,
-.rent-close-modal-btn:focus {
-  background-color: #4D5AE5;
+.rent-modal-btn svg {
+  fill: #fff;
 }
 
-.rent-modal-text {
-  color: #fbfbfb;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1;
-  cursor: pointer;
-  letter-spacing: -0.02em;
-}
-
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.rent-modal-descr {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .rent-wrapper {
+    padding: 0 100px;
+  }
+
   .input-wrapper {
     padding: 0 148px;
   }
 
-  .form-wrapper {
+  .rent-form {
     margin: 50px 0;
   }
 
@@ -160,10 +181,10 @@ display: flex;
     border: none;
   }
 
-    .backdrop{
-      top: 30%;
-      left: 35%;
-    }
+  .backdrop {
+    top: 30%;
+    left: 35%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -174,6 +195,11 @@ display: flex;
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
+    padding: 0 50px;
+  }
+
+  .rent-content-wrapper {
+    max-width: 472px;
   }
 
   .input-wrapper {
@@ -183,10 +209,10 @@ display: flex;
     margin: 0;
   }
 
-     .backdrop {
-       top: 27%;
-       left: 50%;
-     }
+  .backdrop {
+    top: 27%;
+    left: 50%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
