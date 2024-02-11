@@ -5,15 +5,46 @@
     </h2>
     <ul class="our-card-list">
       <li class="our-card-list-item">
-        <img
-          srcset="
-            ./img/our/arrow_yacht.jpg     1x,
-            ./img/our/arrow_yacht_2x.jpeg 2x
+        <picture>
+          <source
+            srcset="
+              ./img/our/arrow_yacht_deskxl.jpg    1x,
+              ./img/our/arrow_yacht_deskxl_2x.jpg 2x
+            "
+            media="(min-width:1440px)
+            "
+          />
+          <source
+            srcset="
+              ./img/our/arrow_yacht_desk.jpg    1x,
+              ./img/our/arrow_yacht_desk_2x.jpg 2x
+            "
+            media="(min-width:1280px)
           "
-          src="./img/our/arrow_yacht.jpg"
-          alt="arrow_yacht"
-          class="yacht-img"
-        />
+          />
+          <source
+            srcset="
+              ./img/our/arrow_yacht_tab.jpg    1x,
+              ./img/our/arrow_yacht_tab_2x.jpg 2x
+            "
+            media="(min-width:768px)
+          "
+          />
+          <source
+            srcset="
+              ./img/our/arrow_yacht.jpg     1x,
+              ./img/our/arrow_yacht_2x.jpeg 2x
+            "
+            media="(min-width:320px)
+          "
+          />
+          <img
+            src="./img/our/arrow_yacht_deskxl.jpg"
+            alt="arrow_yacht"
+            class="yacht-img"
+          />
+        </picture>
+
         <div class="our-yacht-main">
           <p class="our-yacht-name">Arrow</p>
           <p class="our-yacht-category">LUXURY YAHTS</p>
@@ -42,15 +73,35 @@
       </li>
 
       <li class="our-card-list-item second">
-        <img
-          srcset="
-            ./img/our/benetti_yacht.jpg    1x,
-            ./img/our/benetti_yacht_2x.jpg 2x
-          "
-          src="./img/our/benetti_yacht.jpg"
-          alt="arrow_yacht"
-          class="yacht-img"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/our/benetti_yacht_deskxl.jpg    1x,
+              ./img/our/benetti_yacht_deskxl_2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./img/our/benetti_yacht_desk.jpg    1x,
+              ./img/our/benetti_yacht_desk_2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./img/our/benetti_yacht_tab.jpg    1x,
+              ./img/our/benetti_yacht_tab_2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            src="./img/our/benetti_yacht_tab.jpg"
+            alt="benetti_yacht"
+            class="yacht-img"
+          />
+        </picture>
+
         <div class="our-yacht-main">
           <p class="our-yacht-name">BENETTI OASIS 40M BO122</p>
           <p class="our-yacht-category">LUXURY YAHTS</p>
@@ -79,29 +130,28 @@
       </li>
 
       <li class="our-card-list-item third">
-        <!-- <picture>
-          <source srcset="/img/rent/rent-des-x1.png 1x, 
-      /img/rent/rent-des-x2.png 2x" media="(min-width:1440px)">
+        <picture>
+          <source
+            srcset="
+              ./img/our/belleanna_yacht_deskxl.jpg    1x,
+              ./img/our/belleanna_yacht_deskxl_2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./img/our/belleanna_yacht_desk.jpg    1x,
+              ./img/our/belleanna_yacht_desk_2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <img
+            src="./img/our/belleanna_yacht_deskxl.jpg"
+            alt="belleanna_yacht"
+            class="yacht-img"
+          />
+        </picture>
 
-          <source srcset="/img/rent/rent-lapt-x1.png 1x, 
-      /img/rent/rent-lapt-x2.png 2x" media="(min-width:1280px)">
-
-          <source srcset="/img/rent/rent-tab-x1.png 1x, 
-      /img/rent/rent-tab-x2.png 2x" media="(min-width:768px)">
-
-          <source srcset="/img/rent/rent-mob-x1.png 1x, 
-      /img/rent/rent-mob-x2.png 2x" media="(max-width:320px)">
-          <img src="/img/rent/rent-des-x1.png" alt="rent-foto">
-      </picture> -->
-        <img
-          srcset="
-            ./img/our/belleanna_yacht.jpg    1x,
-            ./img/our/belleanna_yacht_2x.jpg 2x
-          "
-          src="./img/our/belleanna_yacht.jpg"
-          alt="arrow_yacht"
-          class="yacht-img"
-        />
         <div class="our-yacht-main">
           <p class="our-yacht-name">BELLE ANNA</p>
           <p class="our-yacht-category">LUXURY YAHTS</p>
