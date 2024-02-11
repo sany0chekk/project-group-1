@@ -44,7 +44,12 @@
 
 .hero-title.fade-in {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateY(-30px);
+}
+
+.hero-text.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .hero-text {
@@ -54,11 +59,6 @@
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
   margin-bottom: 38px;
-}
-
-.hero-text.fade-in {
-  opacity: 0;
-  transform: translateX(50px);
 }
 
 .hero-btn {
@@ -356,6 +356,16 @@
         ),
         url(/img/hero/hero-bg-tablet-2x.jpg);
     }
+  }
+
+  .hero-title.fade-in {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  .hero-text.fade-in {
+    opacity: 0;
+    transform: translateX(50px);
   }
 
   .hero-title {

@@ -17,12 +17,12 @@
 
 .about-title.fade-in {
   opacity: 0;
-  transform: translateX(-20px);
+  transform: translateY(20px);
 }
 
 .about-descr.fade-in {
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateY(20px);
 }
 
 .about-img.fade-in {
@@ -61,6 +61,16 @@
 @media screen and (min-width: 768px) {
   .about {
     transform: translateY(-68px);
+  }
+
+  .about-title.fade-in {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .about-descr.fade-in {
+    opacity: 0;
+    transform: translateX(20px);
   }
 
   .about-content {
