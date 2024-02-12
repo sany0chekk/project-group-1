@@ -125,7 +125,7 @@ rentModalOpen.addEventListener('click', event => {
 
   if (
     nameInput.value.trim() === '' ||
-    !/^[a-zA-Z\s]+$/.test(nameInput.value.trim()) || // Перевірка на літери та пробіли для імені
+    !/^[^\d]+$/.test(nameInput.value.trim()) || // Перевірка на відсутність цифр у полі для імені
     emailInput.value.trim() === '' ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim()) || // Перевірка на правильний формат електронної пошти
     telInput.value.trim() === '' ||
@@ -140,6 +140,16 @@ rentModalOpen.addEventListener('click', event => {
   telInput.value = '';
   commentInput.value = '';
   event.preventDefault();
+});
+
+const nameInput = document.getElementById('name');
+
+nameInput.addEventListener('input', event => {
+  const inputValue = event.target.value;
+  if (/[\d]/.test(inputValue)) {
+    // Якщо введено цифру, замінюємо введений символ на порожній рядок
+    event.target.value = inputValue.replace(/\d/g, '');
+  }
 });
 
 rentModalClose.addEventListener('click', () => {
