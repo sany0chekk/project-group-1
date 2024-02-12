@@ -116,8 +116,30 @@ const rentModal = document.querySelector('.rent-backdrop'),
   rentModalClose = document.querySelector('.rent-modal-btn'),
   rentModalOpen = document.querySelector('.rent-btn');
 
-rentModalOpen.addEventListener('click', () => {
+rentModalOpen.addEventListener('click', event => {
+  // Перевірка на заповненість та правильний формат всіх полів форми
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('mail');
+  const telInput = document.getElementById('tel');
+  const commentInput = document.getElementById('rent-comment');
+
+  if (
+    nameInput.value.trim() === '' ||
+    !/^[a-zA-Z\s]+$/.test(nameInput.value.trim()) || // Перевірка на літери та пробіли для імені
+    emailInput.value.trim() === '' ||
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim()) || // Перевірка на правильний формат електронної пошти
+    telInput.value.trim() === '' ||
+    !/^\+\d{2,}$/.test(telInput.value.trim()) || // Перевірка на правильний формат телефонного номера
+    commentInput.value.trim() === ''
+  ) {
+    return; // Перешкоджає відкриттю модального вікна, якщо хоча б одне поле не заповнене або має неправильний формат
+  }
   rentModal.classList.add('rent-is-active');
+  nameInput.value = '';
+  emailInput.value = '';
+  telInput.value = '';
+  commentInput.value = '';
+  event.preventDefault();
 });
 
 rentModalClose.addEventListener('click', () => {
