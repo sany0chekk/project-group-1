@@ -20,6 +20,15 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1340px;
+    max-width: 1440px;
   }
+}
+
+.fade-in {
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in.fade-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }

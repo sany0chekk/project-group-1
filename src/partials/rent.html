@@ -1,49 +1,44 @@
 <section class="rent" id="rent">
-    <div class="container rent-wrapper">
-        <div class="rent-content-wrapper">
-            <h2 class="rent-name">Rent a yacht now</h2>
-            <form class="rent-form">
-                <div class="form-wrapper">
-                    <input class="rent-input" type="text" id="name" name="name" placeholder="Full Name"
-                        style="color: #fbfbfb;" pattern="[a-zA-z/s]{2,}">
-                    <input class="rent-input" type="email" id="mail" name="mail" placeholder="Email"
-                        style="color: #fbfbfb;" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    <input class="rent-input" type="tel" id="tel" name="tel" placeholder="Phone Number"
-                        style="color: #fbfbfb;" pattern="\+[0-9]{2,}">
-                    <textarea class="rent-user-comment" name="rent-comment" id="rent-comment" placeholder="Comment"
-                        style="color: #fbfbfb;"></textarea>
-                </div>
-            </form>
-            <button type="submit" class="rent-btn">Send</button>
+  <div class="container rent-wrapper">
+    <div class="rent-content-wrapper fade-in">
+      <h2 class="rent-name">Rent a yacht now</h2>
+      <form class="rent-form">
+        <div class="form-wrapper">
+          <input class="rent-input" type="text" id="name" name="name" placeholder="Full Name" style="color: #fbfbfb"
+            pattern="[a-zA-z/s]{2,}" required />
+          <input class="rent-input" type="email" id="mail" name="mail" placeholder="Email" style="color: #fbfbfb"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+          <input class="rent-input" type="tel" id="tel" name="tel" placeholder="Phone Number" style="color: #fbfbfb"
+            pattern="\+[0-9]{2,}" required />
+          <textarea class="rent-user-comment" name="rent-comment" id="rent-comment" placeholder="Comment"
+            style="color: #fbfbfb" required></textarea>
         </div>
-        <div class="rent-img">
-            <picture>
-                <source srcset="/img/rent/rent-des-x1.png 1x, 
-            /img/rent/rent-des-x2.png 2x" media="(min-width:1440px)">
-
-                <source srcset="/img/rent/rent-lapt-x1.png 1x, 
-            /img/rent/rent-lapt-x2.png 2x" media="(min-width:1280px)">
-
-                <source srcset="/img/rent/rent-tab-x1.png 1x, 
-            /img/rent/rent-tab-x2.png 2x" media="(min-width:768px)">
-
-                <source srcset="/img/rent/rent-mob-x1.png 1x, 
-            /img/rent/rent-mob-x2.png 2x" media="(max-width:320px)">
-                <img src="/img/rent/rent-des-x1.png" alt="rent-foto">
-            </picture>
-        </div>
+      </form>
+      <button type="submit" class="rent-btn">Send</button>
     </div>
+    <picture class="rent-img fade-in">
+      <source srcset="/img/rent/rent-des-x1.png 1x, /img/rent/rent-des-x2.png 2x" media="(min-width:1440px)" />
+
+      <source srcset="/img/rent/rent-lapt-x1.png 1x, /img/rent/rent-lapt-x2.png 2x" media="(min-width:1280px)" />
+
+      <source srcset="/img/rent/rent-tab-x1.png 1x, /img/rent/rent-tab-x2.png 2x" media="(min-width:768px)" />
+
+      <source srcset="/img/rent/rent-mob-x1.png 1x, /img/rent/rent-mob-x2.png 2x" media="(max-width:320px)" />
+      <img src="/img/rent/rent-des-x1.png" alt="rent-foto" />
+    </picture>
+  </div>
 </section>
+
 <div class="rent-backdrop">
-    <div class="rent-modal">
-        <button class="rent-modal-btn">
-            <svg width="12" height="12">
-                <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <p class="rent-modal-descr">
-            Thank you for submitting the form. <br />Your data has been successfully
-            sent.
-        </p>
-    </div>
+  <div class="rent-modal">
+    <button class="rent-modal-btn">
+      <svg width="12" height="12">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="rent-modal-descr">
+      Thank you for submitting the form. <br />Your data has been successfully
+      sent.
+    </p>
+  </div>
 </div>

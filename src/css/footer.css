@@ -1,6 +1,12 @@
 .footer {
   padding-top: 80px;
 }
+
+.footer.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 .container-footer {
   margin: 0 auto;
   max-width: 375px;
@@ -117,6 +123,7 @@
   .footer {
     padding-top: 150px;
   }
+
   .container-footer {
     max-width: 768px;
     padding: 0 16px;
@@ -129,7 +136,7 @@
     margin-bottom: 96px;
   }
   .footer-logo {
-    margin-bottom: 0;
+    margin: 0;
     font-size: 20px;
   }
   .footer-logo-id {
@@ -174,4 +181,9 @@
   .container-footer {
     max-width: 1440px;
   }
+}
+
+.fade-in.fade-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }

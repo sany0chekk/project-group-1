@@ -19,22 +19,14 @@ img {
   border-radius: 24px;
 }
 
-.container {
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 /*---------section advantages---------*/
 
-.advantages-container {
+.advantages {
   padding-top: 80px;
-  padding-bottom: 80px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.advantages {
-  max-width: 295px;
+.advantages-content {
   background-color: #1b414b;
   border-radius: 24px;
   padding: 80px 20px;
@@ -47,8 +39,18 @@ img {
   counter-reset: item;
   list-style-type: none;
   display: flex;
-flex-direction: column;
-gap: 40px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.advantages-content.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.advantages-img.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .advantages-item {
@@ -59,7 +61,7 @@ gap: 40px;
   letter-spacing: -0.05em;
   color: #fbfbfb;
   display: block;
-  width: 295px;
+  max-width: 295px;
 }
 
 .advantages-item:before {
@@ -92,48 +94,40 @@ gap: 40px;
   opacity: 0.8;
 }
 
-
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-  .advantages {
+  .advantages-content {
     max-width: 704px;
     padding: 90px 32px;
   }
-.advantages-item {
-    max-width: 295px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.advantages-list {
+  .advantages-list {
+    gap: 44px 32px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 44px 32px;
-}
+  }
+
+  .advantages-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 304px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 50px;
-  }
-.advantages-container {
+  .advantages-wrap {
     display: flex;
     gap: 32px;
-}
+  }
+  .advantages-content {
+    margin-bottom: 0;
+  }
 
-.advantages-item:focus,
-.advantages-item:hover 
-{
-    background-color: rgba(251, 251, 251, 0.3);
-    border-radius: 24px;
-    padding: 15px;
-}
-}
+  .advantages-content.fade-in {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1340px;
+  .advantages-img.fade-in {
+    opacity: 0;
+    transform: translateX(30px);
   }
 }
